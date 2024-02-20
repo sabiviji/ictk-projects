@@ -26,7 +26,7 @@ public class UserController {
 
     @PostMapping("users")
     public User createUser(@RequestBody User user) {
-        System.out.println(user.getUserId() + user.getPhoneNo() + user.getEmailId());
+//        System.out.println(user.getUserId() + user.getPhoneNo() + user.getEmailId());
         return userService.createUser(user);
     }
 
